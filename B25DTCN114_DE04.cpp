@@ -97,7 +97,7 @@ void capNhat(CuaHang ds[], int n){
 	
 	int pos = index(ds,n,ma);
 	if(pos == -1){
-		printf("Không tim thay mat hang do");
+		printf("KhÃ´ng tim thay mat hang do");
 		return;
 	}
 	
@@ -136,15 +136,16 @@ int xoaHang(CuaHang ds[], int n){
 	
 	int pos = index(ds,n,ma);
 	if(pos != -1){
-		printf("Không tim thay mat hang do");
+		printf("KhÃ´ng tim thay mat hang do");
 		return n;
 	}
 	
-	for(int i = index; i<n-1; i--){
+	for(int i = pos; i<n-1; i--){
 		ds[i]=ds[i-1];
 	}
 	n--;
-	printf("Xoa thanh cong")
+	printf("Xoa thanh cong");
+	return n;
 	
 }
 
